@@ -3,7 +3,7 @@
 
 <head>
 
-<script type="text/javascript" src = "myclock.js">
+<script type="text/javascript" src = "myclock.js" src = "initialstate.js">
 var time;
 var hours;
 var minutes;
@@ -17,10 +17,10 @@ var seconds;
 <span id = "Timer">&nbsp;</span>
 
 <form>
-<input type="text" id="userSeconds"><br>
-<input type="text" id="userMinutes"><br>
-<input type="text" id="userHours"><br>
-<input type="submit" value="submit">
+<input type="text" id="userSeconds"/><br>
+<input type="text" id="userMinutes"/><br>
+<input type="text" id="userHours"/><br>
+<input type="submit" value="Run" onclick="clock();"/>
 </form>
 </body>
 
