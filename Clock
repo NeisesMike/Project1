@@ -13,15 +13,15 @@ var currentTime;
         
 </head>
 
-<body onload = "initialstate(); setInterval('clock()', 1000)">
+<body onload = "initialstate();">
 
 <span id = "Timer">&nbsp;</span>
 
-<form>
+<form onsubmit = "setInterval('clock()', 1000);">
 <input type="text" id="userSeconds"/><br>
 <input type="text" id="userMinutes"/><br>
 <input type="text" id="userHours"/><br>
-<input type="submit" value="Run" onclick="clock();"/>
+<input type="submit" value="Run" />
 </form>
 </body>
 
