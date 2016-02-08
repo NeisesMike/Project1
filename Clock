@@ -9,7 +9,7 @@
         
 </head>
 
-<body onload = "clock(); setInterval('clock()', 1000)">
+<body onload = "initialstate(); setInterval('clock()', 1000)">
 
 <span id = "Timer">&nbsp;</span>
 
