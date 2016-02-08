@@ -4,7 +4,10 @@
 <head>
 
 <script type="text/javascript" src = "myclock.js">
-
+var time;
+var hours;
+var minutes;
+var seconds;
 </script>
         
 </head>
