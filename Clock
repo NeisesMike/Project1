@@ -3,24 +3,10 @@
 
 <head>
 
-<script type="text/javascript">
-<!--
-function clock() {
+<script type="text/javascript" src = "myclock.js">
 
-    var time = new Date();
-
-    var seconds = time.getSeconds();
-    var minutes = time.getMinutes();
-    var hours = time.getHours();
-
-    var currentTime = hours + ":" + minutes + ":" + seconds;
-
-    document.getElementById("Timer").firstChild.nodeValue = currentTime;
-
-}
-// -->
 </script>
-
+        
 </head>
 
 <body onload = "clock(); setInterval('clock()', 1000)">
