@@ -1,12 +1,12 @@
 function clock() {
 
-    var time = new Date();
+    time = new Date();
 
-    var seconds = time.getSeconds();
-    var minutes = time.getMinutes();
-    var hours = time.getHours();
+    seconds = time.getSeconds();
+    minutes = time.getMinutes();
+    hours = time.getHours();
 
-    var currentTime = hours + ":" + minutes + ":" + seconds;
+    currentTime = hours + ":" + minutes + ":" + seconds;
 
     document.getElementById("Timer").firstChild.nodeValue = currentTime;
 
