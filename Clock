@@ -3,11 +3,15 @@
 
 <head>
 
-<script type="text/javascript" src = "myclock.js" src = "initialstate.js">
+<script type="text/javascript" src = "myclock.js">
 var time;
 var hours;
 var minutes;
 var seconds;
+var currentTime;
+</script>
+
+<script src = "initialstate.js">
 var currentTime;
 </script>
         
