@@ -17,7 +17,7 @@ var currentTime;
         
 </head>
 
-<body onload = "initialstate();">
+<body onload = "initialState();">
 
 <span id = "Timer">&nbsp;</span>
 
