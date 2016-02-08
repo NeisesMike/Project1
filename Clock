@@ -9,10 +9,16 @@
         
 </head>
 
-<body onload = "clock(); setInterval('clock()', 1000)">
+<body onload = "initialstate(); setInterval('clock()', 1000)">
 
 <span id = "Timer">&nbsp;</span>
 
+<form>
+<input type="text" id="userSeconds"><br>
+<input type="text" id="userMinutes"><br>
+<input type="text" id="userHours"><br>
+<input type="submit" value="submit">
+</form>
 </body>
 
 </html>
