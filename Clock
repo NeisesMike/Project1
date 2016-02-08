@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script type="text/javascript">
+<!--
+function clock() {
+
+    var time = new Date();
+
+    var seconds = time.getSeconds();
+    var minutes = time.getMinutes();
+    var hours = time.getHours();
+
+    var currentTime = hours + ":" + minutes + ":" + seconds;
+
+    document.getElementById("Timer").firstChild.nodeValue = currentTime;
+
+}
+// -->
+</script>
+
+</head>
+
+<body onload = "clock(); setInterval('clock()', 1000)">
+
+<span id = "Timer">&nbsp;</span>
+
+</body>
+
+</html>
