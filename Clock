@@ -28,7 +28,7 @@
                 <input type="submit" value="Set Time" />
         </form>
         <form onsubmit = "setInterval('clock()', 1000);">
-                <input type=submit" value = "Local Time" />
+                <input type="submit" value = "Local Time" />
         </form>
 </body>
 
