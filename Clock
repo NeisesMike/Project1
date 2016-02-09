@@ -3,32 +3,32 @@
 
 <head>
 
-<script type="text/javascript" src = "myclock.js">
-var time;
-var hours;
-var minutes;
-var seconds;
-var currentTime;
-</script>
+        <script type="text/javascript" src = "myclock.js">
+                var time;
+                var hours;
+                var minutes;
+                var seconds;
+                var currentTime;
+        </script>
 
-<script src = "initialstate.js">
-var currentTime;
-</script>
+        <script src = "initialstate.js">
+                var currentTime;
+        </script>
         
 </head>
 
 <body onload = "initialState();">
 
-<span id = "Timer">&nbsp;</span>
+        <span id = "Timer">&nbsp;</span>
 
-<form onsubmit = "setInterval('clock()', 1000);">
-<input type="text" id="userSeconds"/><br>
-<input type="text" id="userMinutes"/><br>
-<input type="text" id="userHours"/><br>
-<input type="submit" value="Run" />
-<button onclick="clock()">Local Time</button>
-<button onclick=?clock(userHours, userMinutes, userSeconds)">Set Time</button>
-</form>
+        <form onsubmit = "setInterval('clock()', 1000);">
+                <input type="text" id="userSeconds"/><br>
+                <input type="text" id="userMinutes"/><br>
+                <input type="text" id="userHours"/><br>
+                <input type="submit" value="Run" />
+        </form>
+        <button onclick="clock()">Local Time</button>
+        <button onclick=?clock(userHours, userMinutes, userSeconds)">Set Time</button>
 </body>
 
 </html>
