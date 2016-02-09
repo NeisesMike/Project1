@@ -19,9 +19,9 @@
         
 </head>
 
-<body onload = "initialState()">
+<body>
 
-        <span id = "Timer">&nbsp;</span>
+        <span id = "Timer">00:00:00</span>
 
         <form onsubmit = "setInterval('setclock(userHours, userMinutes, userSeconds)', 1000);">
                 <input type="text" id="userHours"/><br>
