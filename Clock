@@ -3,7 +3,7 @@
 
 <head>
 
-        <script type="text/javascript" src = "myclock.js">
+        <script src = "myclock.js">
                 var time;
                 var hours;
                 var minutes;
@@ -12,7 +12,9 @@
         </script>
 
         <script src = "initialstate.js">
-                var currentTime;
+        </script>
+        
+        <script src = "setclock.js">
         </script>
         
 </head>
@@ -21,7 +23,7 @@
 
         <span id = "Timer">&nbsp;</span>
 
-        <form onsubmit = "setInterval('clock(userHours, userMinutes, userSeconds)', 1000);">
+        <form onsubmit = "setInterval('setclock(userHours, userMinutes, userSeconds)', 1000);">
                 <input type="text" id="userHours"/><br>
                 <input type="text" id="userMinutes"/><br>
                 <input type="text" id="userSeconds"/><br>
