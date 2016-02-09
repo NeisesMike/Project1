@@ -26,6 +26,8 @@ var currentTime;
 <input type="text" id="userMinutes"/><br>
 <input type="text" id="userHours"/><br>
 <input type="submit" value="Run" />
+<button onclick="clock()">Local Time</button>
+<button onclick=?clock(userHours, userMinutes, userSeconds)">Set Time</button>
 </form>
 </body>
 
