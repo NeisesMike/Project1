@@ -11,3 +11,15 @@ function clock() {
     document.getElementById("Timer").firstChild.nodeValue = currentTime;
 
 }
+
+function clock(h, m, s) {
+
+    time = new Date();
+
+    time.setHours(h,m,s);
+
+    currentTime = hours + ":" + minutes + ":" + seconds;
+
+    document.getElementById("Timer").firstChild.nodeValue = currentTime;
+
+}
