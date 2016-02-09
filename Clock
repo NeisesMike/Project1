@@ -21,14 +21,15 @@
 
         <span id = "Timer">&nbsp;</span>
 
-        <form onsubmit = "setInterval('clock()', 1000);">
-                <input type="text" id="userSeconds"/><br>
-                <input type="text" id="userMinutes"/><br>
+        <form onsubmit = "setInterval('clock(userHours, userMinutes, userSeconds)', 1000);">
                 <input type="text" id="userHours"/><br>
-                <input type="submit" value="Run" />
+                <input type="text" id="userMinutes"/><br>
+                <input type="text" id="userSeconds"/><br>
+                <input type="submit" value="Set Time" />
         </form>
-        <button onclick="clock()">Local Time</button>
-        <button onclick=?clock(userHours, userMinutes, userSeconds)">Set Time</button>
+        <form onsubmit = "setInterval('clock()', 1000);">
+                <input type=submit" value = "Local Time" />
+        </form>
 </body>
 
 </html>
