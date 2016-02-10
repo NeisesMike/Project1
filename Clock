@@ -4,6 +4,7 @@
 <head>
 
         <script src = "myclock.js">
+		var startTime = new Date();
                 var hours;
                 var minutes;
                 var seconds;
