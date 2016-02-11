@@ -1,13 +1,16 @@
 function clock() {
 
-    time = new Date();
+	userTime = new Date(2016, 1, 15, 12, 33, 24, 567);
 
-    seconds = time.getSeconds();
-    minutes = time.getMinutes();
-    hours = time.getHours();
+	diffTime = new Date() - startTime;
+	userTime.setMilliseconds(userTime.getMilliseconds() + diffTime);
 
-    currentTime = hours + ":" + minutes + ":" + seconds;
+	seconds = time.getSeconds();
+	minutes = time.getMinutes();
+	hours = time.getHours();
 
-    document.getElementById("Timer").firstChild.nodeValue = currentTime;
+	currentTime = hours + ":" + minutes + ":" + seconds;
+
+	document.getElementById("Timer").firstChild.nodeValue = currentTime;
 
 }
