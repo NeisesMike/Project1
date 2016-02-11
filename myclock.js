@@ -5,9 +5,9 @@ function clock() {
 	diffTime = new Date() - startTime;
 	userTime.setMilliseconds(userTime.getMilliseconds() + diffTime);
 
-	seconds = time.getSeconds();
-	minutes = time.getMinutes();
-	hours = time.getHours();
+	seconds = userTime.getSeconds();
+	minutes = userTime.getMinutes();
+	hours = userTime.getHours();
 
 	currentTime = hours + ":" + minutes + ":" + seconds;
 
