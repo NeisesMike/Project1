@@ -1,13 +1,13 @@
 function clock() {
 	
-	var userTime = new Date(2016, 1, 15, 12, 33, 24, 567);
+	var userTime = new Date(2016, 1, 15, 1, 1, 24, 567);
 
 	var diffTime = new Date() - startTime;
 	userTime.setMilliseconds(userTime.getMilliseconds() + diffTime);
 
-	var seconds = userTime.getSeconds();
-	var minutes = userTime.getMinutes();
-	var hours = userTime.getHours();
+	var seconds = (userTime.getSeconds() < 10 ? "0" : "") + userTime.getSeconds();
+	var minutes = (userTime.getMinutes() < 10 ? "0" : "") + userTime.getMinutes();
+	var hours = (userTime.getHours() < 10 ? "0" : "") + userTime.getHours();
 
 	var currentTime = hours + ":" + minutes + ":" + seconds;
 
