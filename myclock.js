@@ -22,6 +22,10 @@ function clock() {
 			hours = hours - 12;
 			parity = "pm";
 		}
+		else if(hours==12)
+		{
+			parity = "pm";
+		}
 		else
 		{
 			parity = "am";
