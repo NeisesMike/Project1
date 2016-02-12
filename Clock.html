@@ -18,20 +18,22 @@
         	var x = 0;
         	var y = 0;
         	var startTime;
+			var standard = 0;
         	
         	function executeClock() 
-		{
-			startTime = new Date();
-			setclock(x,y);
-			setInterval(clock, 1000);
-			clock();
-		}
+			{
+				startTime = new Date();
+				setclock(x,y);
+				setInterval(clock, 1000);
+				clock();
+			}
 		
-        	function updateClock()
+        	function updateClock(mode)
         	{
+				standard = mode;
         		x = prompt("enter hours");
-			y = prompt("enter minutes");
-			executeClock();
+				y = prompt("enter minutes");
+				executeClock();
         	}
         </script>
 </head>
@@ -40,7 +42,8 @@
 
         <span id = "Timer">00:00:00</span>
 
-	<button onclick="updateClock()">Set Time</button>
+	<button onclick="updateClock(0)">Set Time: 24-Hour Mode</button>
+	<button onclick="updateClock(1)">Set Time: 12-Hour Mode</button>
 </body>
 
 </html>
