@@ -3,9 +3,11 @@
 
 <head>
 
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+
 	<script src = "myclock.js">
 	</script>
-
+       
 	<script src = "setclock.js">
 	</script>
         
@@ -35,15 +37,18 @@
 			standard = mode;
 		}
 		</script>
+
 </head>
 
 <body>
 
-	<span id = "Timer">00:00:00</span>
+	<div id = "Timer">00:00:00</div>
 
-	<button onclick="updateClock()">Set Time</button>
-	<button onclick="updateMode(0)">24-Hour Mode</button>
-	<button onclick="updateMode(1)">12-Hour Mode</button>
+	<div id = "buttons">
+		<button onclick="updateClock()">Set Time</button>
+		<button onclick="updateMode(0)">24-Hour Mode</button>
+		<button onclick="updateMode(1)">12-Hour Mode</button>
+	</div>
 
 </body>
 
