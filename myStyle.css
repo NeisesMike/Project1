@@ -1,0 +1,25 @@
+body {
+	background-color: lightblue;
+}
+
+#Timer{
+	text-align: center;
+	height:50vh;
+	width: 100vw;
+	font-size: 25vh;
+	color: navy;
+}
+
+#buttons {
+	text-align: center;
+	width: 100vw;
+	height:50vh;
+}
+
+button {
+	border-radius: 8px;
+	background-color: gray;
+	border: 2px black;
+	font-size: 5vh;
+
+}
