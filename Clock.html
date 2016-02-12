@@ -12,6 +12,17 @@
         <script src = "setclock.js">
         </script>
         
+        <script type = "text/javascript">
+        	var x = 0;
+        	var y = 0;
+        	var startTime;
+        	
+        	function updateClock()
+        	{
+        		x = prompt("enter hours");
+			y = prompt("enter minutes");
+        	}
+        </script>
 </head>
 
 <body>
@@ -25,6 +36,7 @@
 	clock();
 	</script>
 
+	<button onclick="updateClock()">Set Time</button>
 </body>
 
 </html>
