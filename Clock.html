@@ -22,14 +22,13 @@
 		function executeClock() 
 		{
 			startTime = new Date();
-			setclock(x,y);
 			setInterval(clock, 1000);
 			clock();
 		}
 		function updateClock()
 		{
-			x = prompt("enter hours");
-			y = prompt("enter minutes");
+			userHours = prompt("enter hours");
+			userMinutes = prompt("enter minutes");
 			executeClock();
 		}
 		function updateMode(mode)
