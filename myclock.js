@@ -1,6 +1,6 @@
 function clock() {
 	
-	var userTime = new Date(2016, 1, 15, 0, userHours, userMinutes, 567);
+	var userTime = new Date(2016, 1, 15, userHours, userMinutes, 0, 0);
 
 	var diffTime = new Date() - startTime;
 	userTime.setMilliseconds(userTime.getMilliseconds() + diffTime);
