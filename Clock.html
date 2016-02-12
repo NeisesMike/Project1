@@ -13,10 +13,20 @@
         </script>
         
         <script type = "text/javascript">
+        	var userHours;
+        	var userMinutes;
         	var x = 0;
         	var y = 0;
         	var startTime;
         	
+        	function executeClock() 
+		{
+			startTime = new Date();
+			setclock(x,y);
+			setInterval(clock, 1000);
+			clock();
+		}
+		
         	function updateClock()
         	{
         		x = prompt("enter hours");
@@ -28,13 +38,6 @@
 <body>
 
         <span id = "Timer">00:00:00</span>
-
-	<script type = "text/javascript">
-
-	var startTime = new Date();
-	setInterval(clock, 1000);
-	clock();
-	</script>
 
 	<button onclick="updateClock()">Set Time</button>
 </body>
