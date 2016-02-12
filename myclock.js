@@ -9,6 +9,18 @@ function clock() {
 	var minutes = (userTime.getMinutes() < 10 ? "0" : "") + userTime.getMinutes();
 	var hours = (userTime.getHours() < 10 ? "0" : "") + userTime.getHours();
 
+	if(standard==1)
+	{
+		if(hours==0)
+		{
+			hours = 12;
+		}
+		else if(hours > 12)
+		{
+			hours = hours -12;
+		}
+	}
+
 	var currentTime = hours + ":" + minutes + ":" + seconds;
 
 	document.getElementById("Timer").firstChild.nodeValue = currentTime;
