@@ -1,6 +1,6 @@
 function clock() {
 	
-	var userTime = new Date(2016, 1, 15, userHours, userMinutes, 0, 0);
+	var userTime = new Date(2016, 1, 15, x, y, 0, 0);
 	var parity = "";
 
 	var diffTime = new Date() - startTime;
