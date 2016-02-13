@@ -11,30 +11,12 @@
 	<script src = "setclock.js">
 	</script>
         
-	<script type = "text/javascript">
+	<script type = "text/javascript" src = "updateclock.js">
 		var userHours;
 		var userMinutes;
-		var x = 0;
-		var y = 0;
 		var startTime;
 		var standard = 0;
         	
-		function executeClock() 
-		{
-			startTime = new Date();
-			setInterval(clock, 1000);
-			clock();
-		}
-		function updateClock()
-		{
-			userHours = prompt("enter hours");
-			userMinutes = prompt("enter minutes");
-			executeClock();
-		}
-		function updateMode(mode)
-		{
-			standard = mode;
-		}
 		</script>
 
 </head>
