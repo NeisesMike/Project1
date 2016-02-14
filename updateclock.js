@@ -1,6 +1,6 @@
 /**
 *	@file : updateClock.js
-*	@author : Ethan Ward, Mike Neises, Travis
+*	@author : Ethan Ward, Mike Neises, Travis Augustine
 *	@date : 2016.02.13
 *	@brief: Gets input from the user for what settings they want, then updates them for use by clock().
 */
