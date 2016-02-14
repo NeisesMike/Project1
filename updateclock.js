@@ -29,17 +29,17 @@ function updateClock() {
 	
 	while (isNaN(userHours) || userHours >23 || userHours <0)
 	{
-		inputHours = prompt("Please enter hours between 0 and 23:");
+		inputHours = prompt("Please enter a number between 0 and 23:");
 		userHours = parseInt(inputHours);
 	}
 
 
-   	var inputMinutes = prompt("enter minutes");
+   	var inputMinutes = prompt("Enter minutes:");
 	userMinutes = parseInt(inputMinutes);
 
 	while (isNaN(userMinutes) || userMinutes >59 || userMinutes <0)
 	{
-		inputMinutes = prompt("Please enter minutes between 0 and 59");
+		inputMinutes = prompt("Please enter a number between 0 and 59");
 		userMinutes = parseInt(inputMinutes);
 	}
 
