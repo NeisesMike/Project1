@@ -24,8 +24,24 @@ function executeClock() {
 	*  @return None
 */
 function updateClock() {
-    userHours = prompt("enter hours");
-    userMinutes = prompt("enter minutes");
+    var inputHours = prompt("enter hours");
+	userHours = parseInt(inputHours);
+	
+	while (isNaN(userHours))
+	{
+		inputHours = prompt("enter a numerical value for hours");
+		userHours = parseInt(inputHours);
+	}
+	
+
+    var inputMinutes = prompt("enter minutes");
+	userMinutes = parseInt(inputMinutes);
+	while (isNaN(userMinutes))
+	{
+		inputMinutes = prompt("enter a numerical value for minutes");
+		userMinutes = parseInt(inputMinutes);
+	}
+		
     executeClock();
 }
 
