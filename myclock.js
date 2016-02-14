@@ -6,6 +6,7 @@
 */
 
 /**
+        *  @name clock
 	*  @pre None, although ideally updateClock() has been called to set the time.
 	*  @post The time is set and then updated using the difference between its time and the current time. The string used for displaying the time is updated according to the mode, and the time is displayed.
 	*  @return 
