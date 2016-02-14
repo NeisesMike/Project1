@@ -24,12 +24,12 @@ function executeClock() {
 	*  @return None
 */
 function updateClock() {
-    	var inputHours = prompt("enter hours");
+    	var inputHours = prompt("Enter hours:");
 	userHours = parseInt(inputHours);
 	
 	while (isNaN(userHours) || userHours >23 || userHours <0)
 	{
-		inputHours = prompt("enter hours between 0 and 23");
+		inputHours = prompt("Please enter hours between 0 and 23:");
 		userHours = parseInt(inputHours);
 	}
 
@@ -39,7 +39,7 @@ function updateClock() {
 
 	while (isNaN(userMinutes) || userMinutes >59 || userMinutes <0)
 	{
-		inputMinutes = prompt("enter minutes between 0 and 59");
+		inputMinutes = prompt("Please enter minutes between 0 and 59");
 		userMinutes = parseInt(inputMinutes);
 	}
 
