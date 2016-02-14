@@ -1,6 +1,6 @@
 /**
 *	@file : myClock.js
-*	@author : Ethan Ward, Mike Neises, Travis
+*	@author : Ethan Ward, Mike Neises, Travis Augustine
 *	@date : 2016.02.13
 *	@brief: Sets the time based on user input, updates it using the difference from the current time, changes how the display of the time looks, and then displays in in the browser. 
 */
